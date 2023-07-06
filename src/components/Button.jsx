@@ -14,9 +14,9 @@ const CustomButton = styled.button`
 
 `
 
-const Button = ({title}) => {
+const Button = ({title, onClickHandler}) => {
     return ( 
-        <CustomButton>
+        <CustomButton onClick={onClickHandler}>
             {title}
         </CustomButton>
      );
