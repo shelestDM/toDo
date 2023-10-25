@@ -1,9 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: 0.3s;
 }
 html, body{
-  height: 100%;
-  background-color: #475569;
+  min-height: 100svh;
+  background-color: #adcffe;
 }
