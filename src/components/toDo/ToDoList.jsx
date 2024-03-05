@@ -4,6 +4,16 @@ import {selectToDosByFilter} from "../../selector/filteredToDoSelector";
 
 const ToDoList = () => {
     const toDos = useSelector(selectToDosByFilter);
+console.log(!!toDos.length);
+
+    if(!toDos.length){
+        return (
+        <div className="animate-slow_appear font-medium text-lg text-center">
+            No ToDos was found :(    
+        </div>
+        )
+    }
+
     return ( 
         <>
             <h3 className="text-center text-xl font-medium my-5">List of My toDos</h3>
