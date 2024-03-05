@@ -6,9 +6,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: 0.3s;
 }
 html, body{
-  min-height: 100svh;
-  background-color: #adcffe;
+  /* min-height: 100svh;
+  background-color: #adcffe; */
+}
+
+input:focus{
+  /* border: 0; */
+  outline: 0;
 }
