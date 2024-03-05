@@ -4,8 +4,7 @@ import {selectToDosByFilter} from "../../selector/filteredToDoSelector";
 
 const ToDoList = () => {
     const toDos = useSelector(selectToDosByFilter);
-console.log(!!toDos.length);
-
+    
     if(!toDos.length){
         return (
         <div className="animate-slow_appear font-medium text-lg text-center">
